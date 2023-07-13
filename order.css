@@ -1,0 +1,176 @@
+.main{
+    animation: fadeIn 5s;
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 4; }
+  }
+
+  body{
+    background-image:url(an.jpg);
+    font-family: Roboto Mono;
+  }
+
+  nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+    color: black;
+    font-family: Lobster;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+  
+  }
+
+
+
+  .menu a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-weight: 500;
+    font-family: none;
+  }
+  a {
+    padding: 7px;
+    border-radius: 7px;
+  }
+  a:hover{
+    color: darkslategray;
+    transition: 0.6s;
+    font-size: large;
+   
+  }
+
+  /* Men-disabled spinners pada input number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearanc: textfield;
+}
+
+body {
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+form {
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px 25px;
+  width: 400px;
+  border: 1px solid #333;
+  box-sizing: border-box;
+}
+
+label {
+  display: block;
+}
+
+input:not(#pesan, #hapus) {
+  margin-bottom: 8px;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 3px 5px;
+  outline: none;
+}
+
+input[disabled] {
+  cursor: not-allowed;
+  background-color: rgb(218, 218, 218);
+}
+
+.tombol {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.tombol input {
+  background-color: rgb(50, 50, 216);
+  padding: 10px;
+  border-radius: 12px;
+  border: none;
+  color: white;
+}
+
+.tombol :is(#pesan, #hapus) {
+  cursor: pointer;
+}
+
+.output {
+  display: none;
+  padding: 15px 25px;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  width: 400px;
+  color: white;
+  border-color:black ;
+}
+
+.output h2 {
+  text-align: center;
+}
+
+.output.tampil {
+  display: block;
+  animation: fade 300ms;
+}
+
+.output p:last-child {
+  color: rgb(32, 204, 55);
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.informasi {
+  margin-top: 20px;
+  color: red;
+  display: flex;
+  flex-direction: column;
+}
+
+.informasi span:first-child {
+  margin-bottom: 10px;
+  font-size: inherit;
+}
+
+.informasi span {
+  font-size: 0.95em;
+}
+
+.informasi span > span {
+  color: rgb(13, 182, 36);
+  font-weight: bold;
+}

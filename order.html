@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="brand">
+              <h2>TravelYuk!</h2>
+            </div>
+            <div class="menu">
+              <a href="home.html">Home</a>
+              <a href="destinasi.html">Destinasi</a>
+              <a href="order.html">Order</a>
+              <a href="owners.html">Owners</a>
+            </div>
+           </nav>
+    </div>
+<div>
+  <h1 style="color: wheat;">-</h1>
+</div>
+    <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Payment</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <form>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" autofocus autocomplete="off" />
+        <label for="destinasi">Destinasi:</label>
+        <input type="text" id="destinasi" list="pilihanDestinasi" autocomplete="off" />
+        <datalist id="pilihanDestinasi">
+          <option value="Jakarta, Indonesia">Jakarta, Indonesia</option>
+          <option value="Buenos Aires, Argentina">Buenos Aires, Argentina</option>
+          <option value="Cape Town, Afrika Selatan">Cape Town, Afrika Selatan</option>
+          <option value="Sydney, Australia">Sydney, Australia</option>
+          <option value="Swiss, Switzerland">Swiss, Switzerland</option>
+          <option value="Tokyo, Jepang">Tokyo, Jepang</option>
+        </datalist>
+
+        <label for="tempat">Tempat Duduk:</label>
+        <input type="text" id="tempat" list="pilihanTempat" autocomplete="off" />
+        <datalist id="pilihanTempat">
+          <option value="1A">1A</option>
+          <option value="2B">2B</option>
+          <option value="3C">3C</option>
+          <option value="4D">4D</option>
+        </datalist>
+
+        <label for="">Maskapai Penerbangan:</label>
+        <input type="text" id="maskapai" list="pilihanMaskapai" autocomplete="off" />
+        <datalist id="pilihanMaskapai">
+          <option value="Lion Air">Lion Air</option>
+          <option value="Batik Air">Batik Air</option>
+          <option value="Citilink">Citilink</option>
+          <option value="Garuda">Garuda</option>
+        </datalist>
+
+        <label for="">Jadwal Penerbangan:</label>
+        <input type="datetime-local" id="jadwal" list="" autocomplete="off" />
+        
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" list="pilihanStatus" autocomplete="off" />
+        <datalist id="pilihanStatus">
+          <option value="Dewasa">Dewasa</option>
+          <option value="Anak-anak">Anak-anak</option>
+        </datalist>
+
+        <label for="pembayaran">Pembayaran:</label>
+        <input type="text" id="pembayaran" list="pilihanPembayaran" autocomplete="off" />
+        <datalist id="pilihanPembayaran">
+          <option value="BCA (002312451)">BCA (002312451)</option>
+          <option value="Mandiri (11124124)">Mandiri (11124124)</option>
+          <option value="BJB (234335534)">BJB (234335534)</option>
+          <option value="DANA (0872721421)">DANA (0872721421)</option>
+        </datalist>
+        <label for="jumlah">Jumlah Tiket:</label>
+
+        <input type="number" id="jumlah" />
+        <label for="subtotal">Subtotal:</label>
+        <input type="number" id="subtotal" disabled />
+        <label for="diskon">Diskon:</label>
+        <input type="number" id="diskon" disabled />
+        <label for="total">Total:</label>
+        <input type="number" id="total" disabled />
+
+      
+
+        <div class="tombol">
+          <input type="submit" value="Pesan" id="pesan" />
+          <input type="button" value="Hapus" id="hapus" />
+        </div>
+      </form>
+
+      <div>
+        <a href="bayar.html" style="color: white; font-weight: 600;">KLIK DISINI JIKA SUDAH MEMBAYAR</a>
+      </div>
+
+      <!-- Jika berhasil pesan akan menampilkan berkas output nya -->
+      <div class="output">
+        <h2>TICKET PAYMENT</h2>
+        <p>Nama: <span id="namaOutput"></span></p>
+        <p>Destinasi: <span id="destinasiOutput"></span></p>
+        <p>Status: <span id="statusOutput"></span></p>
+        <p>Jumlah Tiket: <span id="jumlahOutput"></span></p>
+        <p>Tepmat Duduk: <span id="tempatOutput"></span></p>
+        <p>Masapai Penerbangan: <span id="maskapaiOutput"></span></p>
+        <p>Jadwal Penerbangan: <span id="jadwalOutput"></span></p>
+        <p>Pembayaran: <span id="pembayaranOutput"></span></p>
+        <p>Subtotal: <span id="subtotalOutput"></span></p>
+        <p>Diskon: <span id="diskonOutput"></span></p>
+        <p>Total: <span id="totalOutput"></span></p>
+        <p><sup>*</sup>Harga 1 tiket: <span id="hargaTiket"></span></p>
+      </div>
+    </div>
+  </div>
+
+
+   
+    <script src="main.js"></script>
+  </body>
+</html>
+
+</body>
+</html>

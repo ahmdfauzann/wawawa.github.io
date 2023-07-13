@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&family=Roboto+Mono:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Lobster&family=Roboto+Mono:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    
+  
+}
+
+.main{
+  animation: fadeIn 3s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  
+}
+
+nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+    color: white;
+    font-family: Lobster;
+    position: fixed;
+    z-index: 1;
+    overflow: hidden;
+  
+  }
+
+  .vidio{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto Mono";
+    color: white;
+    
+  }
+
+  .vidio video {
+    position: absolute;
+    width: 1350px;
+    height: 760px;
+  }
+
+  .menu a{
+    text-decoration: none;
+    margin: 5px;
+    color: white;
+    font-weight: 500;
+    font-family: none;
+  }
+  a {
+    padding: 7px;
+    border-radius: 7px;
+  }
+ .menu a:hover{
+    color: darkslategray;
+    transition: 0.6s;
+    font-size: large;
+   
+  }
+
+.tulisan {
+    width: 100%;
+    position: absolute;
+    color: white;
+    top: 45%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.tulisan h1{
+    margin-top: 80px;
+    font-size: 90px;
+    font-weight: 800;
+    overflow: hidden;
+}
+button{
+  
+    width: 200px;
+    border-radius: 15px;
+    padding: 25px;
+    margin: 20px 5px;
+    text-align: center;
+    color: white;
+    border: 2px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: transparent;
+    margin: 0;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  color: white;
+  text-emphasis: none;
+  text-decoration: none;
+}
+
+button:hover{
+    color: black;
+}
+
+.destinasi {
+  text-align: center;
+  font-weight: 100;
+  font-size: 20px;
+  font-family:Roboto Mono;
+  bottom: 70px;
+  color: black;
+}
+
+.bayar {
+ position: absolute;
+ top: 230px;
+ left: 570px;
+}
+
+.silahkan {
+  position: absolute;
+  top: 470px;
+  left: 170px;
+  color: white;
+}
+
+.silahkann {
+  position: absolute;
+  top:170px;
+  left:225px;
+  color: white;
+}
+
+.kembali {
+  position: absolute;
+  top:550px;
+  left:625px;
+  background-color: rgb(79, 79, 215);
+  border: 12px;
+  border-radius: 6px;
+}
+
+.kembali a {
+  color: white;
+  text-decoration: none;
+}
+
+.gallery {
+  margin: 0;
+  height: 100vh;
+  display:grid;
+  place-items: center;
+  background-color: black;
+  z-index: 2;
+  background-repeat: no-repeat;
+}
+
+.container {
+  border-width: 20px;
+}
+
+.container label {
+  border-width: 10px;
+}
+
+.img-container {
+  display:block;
+  background-color: black;
+  
+}
+
+.img-container img{
+  width: 300px;
+  height: 350px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s;
+  justify-content: center;
+  align-items: center;
+  padding-top:20px ;
+  padding-left: 20px;
+  
+}
+
+.img-container img:not(:last-child) {
+  margin-right:20px;
+}
+
+.img-container:hover > :not(:hover) {
+  opacity: 0.2;
+  
+}
+
+.wellcome {
+  font-size: xx-large;
+  color: white;
+  font-family: "Roboto Mono";
+  background-color: black;
+}
+
+.ow {
+  position: absolute;
+  top:200px;
+  left: 200px;
+  justify-content: space-around;
+  font-size: 33px;
+}
+
+.ow a{
+  justify-content: space-around;
+  text-decoration: none;
+  color: white;
+  margin-right:140px ;
+  margin-left: -150px;
+ position:relative;
+}
+
+.output {
+  background-color: white;
+  border-radius: 12px;
+  color: black;
+}
+
+.output p {
+  color: black;
+}
+
+.output h2 {
+  color: black;
+}
